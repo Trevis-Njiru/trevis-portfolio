@@ -80,7 +80,6 @@ a { color: inherit; text-decoration: none; }
 .nav-name {
   font-family: 'Archivo Black', sans-serif;
   font-size: 15px;
-  text-transform: lowercase;
   letter-spacing: 0.01em;
 }
 
@@ -129,7 +128,6 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(56px, 14vw, 170px);
   line-height: 0.9;
   margin: 0;
-  text-transform: lowercase;
   color: var(--ink);
   position: relative;
   display: inline-block;
@@ -164,7 +162,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--terracotta);
   text-shadow: 3px 3px 0 rgba(138, 71, 38, 0.15);
   margin: 0 0 48px;
-  text-transform: lowercase;
   position: relative;
   z-index: 1;
 }
@@ -282,7 +279,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 30px;
   font-weight: 400;
   margin: 10px 0 14px;
-  text-transform: lowercase;
   color: var(--ink);
 }
 .case-head h3 small {
@@ -361,7 +357,6 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(40px, 7vw, 74px);
   line-height: 0.95;
   color: var(--ink);
-  text-transform: lowercase;
   position: relative;
   padding: 20px 34px;
   border: 3px solid var(--ink);
@@ -412,15 +407,4 @@ a { color: inherit; text-decoration: none; }
   .socials { justify-content: center; }
 }
 
-/* ---------- REVEAL ANIMATION ---------- */
-.reveal {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity .7s ease, transform .7s ease;
-}
-.reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* hero always visible on load, staggered */
-.hero .reveal { transition-delay: .15s; }
-.hero .hero-mark.reveal { transition-delay: .3s; }
-.hero .hero-tag.reveal { transition-delay: .5s; }
